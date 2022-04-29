@@ -1,2 +1,2 @@
-# flutter-workshop-projects
+# Flutter Workshop Projects
 Workshop
