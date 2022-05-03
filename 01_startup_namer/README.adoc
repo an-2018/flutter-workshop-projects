@@ -33,7 +33,7 @@ flutter doctor
 
 image::01_startup_namer_flutter_doctor_result1.png[]
 
-image::01_startup_namer_flutter_doctor_result1.png[]
+image::01_startup_namer_flutter_doctor_result2.png[]
 
 
 
