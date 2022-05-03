@@ -1,4 +1,6 @@
-# Startup Namer
+= Startup Namer
+:imagesdir: assets/
+
 A intro project for learning the basics of Flutter applications development
 
 There's 2 parts for this project, in the firs part it will cover the creation of a simple mobile Flutter app, in the part 2 of the project we will add interactivity and page navigation.
@@ -28,6 +30,12 @@ Before starting up check with the command bellow to make sure everything is set 
 ```bash
 flutter doctor
 ```
+
+image::01_startup_namer_flutter_doctor_result1.png[]
+
+image::01_startup_namer_flutter_doctor_result1.png[]
+
+
 
 ## Part I
 The topics covered in this project are:
