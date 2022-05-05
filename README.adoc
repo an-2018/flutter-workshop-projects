@@ -233,7 +233,11 @@ Now is your turn to share with us something from the desktop… yes it’s possi
 
 Write a Flutter desktop application - Using Github API with OAuth2 Flow and Creating Flutter Plugins 💪
 
-- https://codelabs.developers.google.com/codelabs/flutter-github-client#0[https://codelabs.developers.google.com/codelabs/flutter-github-client#0]
+* https://codelabs.developers.google.com/codelabs/flutter-github-client#0[https://codelabs.developers.google.com/codelabs/flutter-github-client#0]
+
+* Demo of FLutter slides
+  ** https://flutterawesome.com/flutter-slides-utilizes-flutter-desktop-embedding-to-provide-a-simple-slide-presentation-app/[https://flutterawesome.com/flutter-slides-utilizes-flutter-desktop-embedding-to-provide-a-simple-slide-presentation-app/]
+  ** https://verygood.ventures/success-stories/flutter-slides[https://verygood.ventures/success-stories/flutter-slides]
 
 ### 12 A look into the community
 
