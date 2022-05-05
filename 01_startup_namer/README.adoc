@@ -1,5 +1,5 @@
 = Startup Namer
-:imagesdir: assets/
+:imagesdir: ../assets/images
 
 A intro project for learning the basics of Flutter applications development
 
@@ -40,6 +40,9 @@ image::01_startup_namer_flutter_doctor_result1.png[]
 image::01_startup_namer_flutter_doctor_result2.png[]
 
 ## Part I
+
+image::hello_world_part1.gif[width=250, role=center]
+
 The topics covered in this project are:
 
 - How to write a Flutter app that looks natural on iOS, Android, desktop (Windows, for example) and the web
@@ -50,6 +53,9 @@ The topics covered in this project are:
 - How to create an infinite, lazily loaded list
 
 ## Part II
+
+image::hello_world_part2.gif[width=250, role=center]
+
 - How to write a Flutter app that looks natural on iOS, Android, Windows, Linux, macOS, and the web
 - How to use hot reload for a quicker development cycle
 - How to add interactivity to a stateful widget
