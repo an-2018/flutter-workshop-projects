@@ -11,19 +11,23 @@ This project is part of the getting started materials from the Flutter documenta
 - Flutter SDK
 - Code Editor
 
-> Folow instalation and configurations steps on this links:
+Folow instalation and configurations steps on this links:
+
 > https://docs.flutter.dev/get-started/install
+
 > https://docs.flutter.dev/get-started/editor?tab=vscode
 
 
 - A device for testing 
-> Follow instruction on setting up your device
+
+Follow instruction on setting up your device
+
 > https://docs.flutter.dev/get-started/install/macos#set-up-your-android-device
     
-    - A physical device (Android or iOS)
-    - Emulators (Android or iOS)
-    - A browser (Chrome is required for debugging)
-    - Windows, Linux or macOS 
+- A physical device (Android or iOS)
+- Emulators (Android or iOS)
+- A browser (Chrome is required for debugging)
+- Windows, Linux or macOS 
 
 Before starting up check with the command bellow to make sure everything is set up correctly:
 
@@ -35,10 +39,9 @@ image::01_startup_namer_flutter_doctor_result1.png[]
 
 image::01_startup_namer_flutter_doctor_result2.png[]
 
-
-
 ## Part I
 The topics covered in this project are:
+
 - How to write a Flutter app that looks natural on iOS, Android, desktop (Windows, for example) and the web
 - Basic structure of a Flutter app
 - Finding and using packages to extend functionality
