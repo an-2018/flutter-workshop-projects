@@ -152,9 +152,11 @@ Putting it all together and building something cool
 
 Building Layouts and usefull widgets
 
-image::fooderlich_screen1.png[width=250, role=left]
-
-image::fooderlish_screen2.png[width=250, role=center]
+[cols="a,a", frame=none, grid=none, role=left, width=100%]
+|===
+|image::fooderlich_screen1.png[width=250, role=left]
+|image::fooderlish_screen2.png[width=250, float=left, align=center]
+|===
 
 {sp} +
 
@@ -162,9 +164,11 @@ image::fooderlish_screen2.png[width=250, role=center]
 
 Network and get data from API’s
 
-image::pokedex_screen1.png[width=250, role=left]
-
-image::pokedex_screen2.png[width=250, role=center]
+[cols="a,a", frame=none, grid=none, role=left, width=100%]
+|===
+|image::pokedex_screen1.png[width=250, role=left]
+|image::pokedex_screen2.png[width=250, role=center]
+|===
 
 {sp} +
 
