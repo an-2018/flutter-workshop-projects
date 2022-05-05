@@ -1,2 +1,0 @@
-# flutter-workshop-projects
-Workshop
