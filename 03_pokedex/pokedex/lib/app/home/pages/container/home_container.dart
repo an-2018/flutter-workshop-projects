@@ -3,6 +3,7 @@ import 'package:pokedex/app/home/data/pokemon_repository.dart';
 import 'package:pokedex/app/home/pages/HomeLoading.dart';
 import 'package:pokedex/app/home/pages/home_error.dart';
 import 'package:pokedex/app/home/pages/home_page.dart';
+import 'package:pokedex/common/exceptions/Failure.dart';
 import 'package:pokedex/common/models/Pokemon.dart';
 
 class HomeContainer extends StatelessWidget {
@@ -20,14 +21,15 @@ class HomeContainer extends StatelessWidget {
 
         if (snapshot.connectionState == ConnectionState.done &&
             snapshot.hasData) {
+          print("has data");
           return HomePage(pokemons: snapshot.data!);
         }
 
         if (snapshot.hasError) {
-          return HomeError(error: snapshot.error.toString());
+          return HomeError(error: (snapshot.error as Failure).message!);
         }
 
-        return HomeLoading();
+        return Container();
       },
     );
   }
