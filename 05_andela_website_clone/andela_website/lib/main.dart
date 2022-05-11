@@ -1,3 +1,4 @@
+import 'package:andela_website/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,26 +13,9 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+          primarySwatch: Colors.blue,
+          textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Roboto')),
       home: const HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.amber,
-        elevation: 0,
-      ),
-      body: Container(
-        color: Colors.purple,
-      ),
     );
   }
 }
