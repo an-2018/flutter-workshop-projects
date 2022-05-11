@@ -3,6 +3,7 @@ import 'package:pokedex/app/home/data/pokemon_repository.dart';
 import 'package:pokedex/app/home/pages/HomeLoading.dart';
 import 'package:pokedex/app/home/pages/container/home_container.dart';
 import 'package:pokedex/app/home/pages/home_page.dart';
+import 'package:pokedex/app/home/route.dart';
 
 void main() {
   runApp(const App());
@@ -14,12 +15,13 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.red,
-        ),
-        home: HomeContainer(
-          repository: PokemonRepository(),
-        ));
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+      ),
+      home: PokedexRoute(
+        repository: PokemonRepository(),
+      ),
+    );
   }
 }
