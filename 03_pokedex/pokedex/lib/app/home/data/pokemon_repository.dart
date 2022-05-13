@@ -14,7 +14,7 @@ class PokemonRepository implements IPokemonRepository {
 
   @override
   Future<List<Pokemon>> getAll() async {
-    final pokemons = <Pokemon>[
+    List<Pokemon> pokemons = <Pokemon>[
       Pokemon(
         id: 1,
         image: "http://www.serebii.net/pokemongo/pokemon/001.png",
@@ -23,6 +23,18 @@ class PokemonRepository implements IPokemonRepository {
         type: ["Grass", "Poison"],
       ),
     ];
+    try {
+      final res = await http.get(url);
+      if (res.statusCode >= 200 && res.statusCode < 300) {
+        final json = jsonDecode(res.body) as Map<String, dynamic>;
+        final list = json["pokemon"] as List<dynamic>;
+        pokemons = list.map((e) => Pokemon.fromMap(e)).toList();
+      } else {
+        throw Exception("Algo deu errado");
+      }
+    } catch (e) {
+      print(e);
+    }
     return Future.value(
       pokemons,
     );

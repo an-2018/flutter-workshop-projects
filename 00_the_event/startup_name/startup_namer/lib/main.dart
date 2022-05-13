@@ -23,22 +23,22 @@ class MyApp extends StatelessWidget {
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
-  
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Center(child: Text("Startup Name Gen")),
+      ),
       body: Center(
-        child: Container(
-          child: RandomWords()
-        ),
+        child: Container(child: RandomWords()),
       ),
     );
   }
 }
 
 class RandomWords extends StatefulWidget {
-  const RandomWords({ Key? key }) : super(key: key);
+  const RandomWords({Key? key}) : super(key: key);
 
   @override
   State<RandomWords> createState() => _RandomWordsState();
@@ -47,7 +47,17 @@ class RandomWords extends StatefulWidget {
 class _RandomWordsState extends State<RandomWords> {
   @override
   Widget build(BuildContext context) {
-    final WordPair pair = WordPair.random();
-    return Text(pair.asPascalCase);
+    final _sugestions = <WordPair>[];
+
+    return ListView.builder(itemBuilder: (context, i) {
+      if (i.isOdd) return Divider();
+      final index = i ~/ 2;
+      if (index >= _sugestions.length) {
+        _sugestions.addAll(generateWordPairs().take(10));
+      }
+      return ListTile(
+        title: Text(_sugestions[index].asPascalCase),
+      );
+    });
   }
 }

@@ -5,7 +5,21 @@ class NavigationBarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      height: 100,
+      child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+        Image.asset("images/logo.png"),
+        Row(
+          children: [
+            _NavBarItem(title: "Nav1"),
+            SizedBox(
+              width: 16,
+            ),
+            _NavBarItem(title: "Nav1"),
+          ],
+        )
+      ]),
+    );
   }
 }
 
@@ -16,7 +30,7 @@ class _NavBarItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: TextStyle(fontSize: 18),
+      style: TextStyle(fontSize: 18, color: Colors.white),
     );
   }
 }
