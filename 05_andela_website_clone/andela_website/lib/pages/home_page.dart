@@ -12,16 +12,14 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Container(
         alignment: Alignment.center,
-        decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage("images/background.jpeg"), fit: BoxFit.cover),
-          color: Colors.amber
-        ),
+        decoration: BoxDecoration(color: Color.fromARGB(255, 6, 129, 98)),
         child: CenteredContainer(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               NavigationBarWidget(),
-              Expanded(child: Row(
+              Expanded(
+                  child: Row(
                 children: [
                   ContentDescription(),
                   Expanded(child: Center(child: CallToAtion(title: "Join us")))
