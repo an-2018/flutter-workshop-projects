@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/01_startup_namer/part_2/startup_namer/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/01_startup_namer/part_2/startup_namer/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/01_startup_namer/part_2/startup_namer/build" />
+      <excludeFolder url="file://$MODULE_DIR$/05_andela_website_clone/andela_website/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/05_andela_website_clone/andela_website/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/05_andela_website_clone/andela_website/build" />
+      <excludeFolder url="file://$MODULE_DIR$/03_pokedex/pokedex/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/03_pokedex/pokedex/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/03_pokedex/pokedex/build" />
+      <excludeFolder url="file://$MODULE_DIR$/02_fooderlich/final/build" />
+      <excludeFolder url="file://$MODULE_DIR$/02_fooderlich/final/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/02_fooderlich/final/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/01_startup_namer/part_1/startup_namer/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/01_startup_namer/part_1/startup_namer/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/01_startup_namer/part_1/startup_namer/build" />
+      <excludeFolder url="file://$MODULE_DIR$/02_fooderlich/starter/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/02_fooderlich/starter/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/02_fooderlich/starter/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
