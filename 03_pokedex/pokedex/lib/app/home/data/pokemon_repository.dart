@@ -9,23 +9,34 @@ abstract class IPokemonRepository {
 }
 
 class PokemonRepository implements IPokemonRepository {
+  //https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json
   Uri url = Uri.parse(ApiConstants.allPokemonURL);
 
   @override
   Future<List<Pokemon>> getAll() async {
+    List<Pokemon> pokemons = <Pokemon>[
+      Pokemon(
+        id: 1,
+        image: "http://www.serebii.net/pokemongo/pokemon/001.png",
+        name: 'Bulbassaur',
+        num: '1',
+        type: ["Grass", "Poison"],
+      ),
+    ];
     try {
-      final response = await http.get(url);
-
-      if (response.statusCode >= 200 && response.statusCode < 300) {
-        final json = jsonDecode(response.body) as Map<String, dynamic>;
-        final list = json['pokemon'] as List<dynamic>;
-        return list.map((e) => Pokemon.fromMap(e)).toList();
+      final res = await http.get(url);
+      if (res.statusCode >= 200 && res.statusCode < 300) {
+        final json = jsonDecode(res.body) as Map<String, dynamic>;
+        final list = json["pokemon"] as List<dynamic>;
+        pokemons = list.map((e) => Pokemon.fromMap(e)).toList();
+      } else {
+        throw Exception("Algo deu errado");
       }
     } catch (e) {
-      throw Failure('Nao foi possivel carregar os dados');
+      print(e);
     }
-    return Future.delayed(
-      Duration(seconds: 1),
+    return Future.value(
+      pokemons,
     );
   }
 }

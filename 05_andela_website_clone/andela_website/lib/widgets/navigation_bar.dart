@@ -7,24 +7,18 @@ class NavigationBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 100,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          SizedBox(
-            height: 80,
-            width: 150,
-            child: Image.asset('images/logo.png'),
-          ),
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              _NavBarItem(title: "NavItem#1"),
-              SizedBox(width: 60),
-              _NavBarItem(title: "NavItem#2"),
-            ],
-          )
-        ],
-      ),
+      child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+        Image.asset("images/logo.png"),
+        Row(
+          children: [
+            _NavBarItem(title: "Nav1"),
+            SizedBox(
+              width: 16,
+            ),
+            _NavBarItem(title: "Nav1"),
+          ],
+        )
+      ]),
     );
   }
 }
@@ -36,7 +30,7 @@ class _NavBarItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: TextStyle(fontSize: 18),
+      style: TextStyle(fontSize: 18, color: Colors.white),
     );
   }
 }

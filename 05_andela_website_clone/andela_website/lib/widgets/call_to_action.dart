@@ -6,17 +6,16 @@ class CallToAtion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 15),
-      decoration: BoxDecoration(
-        color: Color.fromRGBO(255, 31, 229, 146),
-        borderRadius: BorderRadius.circular(5)
-      ),
-      child: Text(
-        title,
-        style:const TextStyle(fontSize: 18, fontWeight: FontWeight.w800,
-        color: Colors.white,
-        )
-      ),
-    );
+        child: Center(
+            child: Text(
+          "Saiba mais",
+          style: TextStyle(fontSize: 18),
+        )),
+        height: 64,
+        width: 150,
+        decoration: BoxDecoration(
+          color: Colors.green[100],
+          borderRadius: BorderRadius.circular(16),
+        ));
   }
 }
